@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Button from "./Button.astro";
+import ProjectList from "../project/ProjectList.astro";
+import Card from "./Card.astro";
+
+interface Props {
+  count?: number;
+}
+
+const { count } = Astro.props;
+
+const projects = await getCollection("project").then((projects) =>
+  projects.reverse().slice(0, count ?? 3)
+);
+---
+
+<section class="mt-8">
+  <Card color="red">
+    <div class="flex justify-between items-start">
+      <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">Projects</h2>
+      <div class="hidden md:block">
+        <Button href="/project/">Go to projects &rarr;</Button>
+      </div>
+      <div class="block md:hidden">
+        <Button href="/project/">to projects</Button>
+      </div>
+    </div>
+    <ProjectList projects={projects} />
+  </Card>
+</section>

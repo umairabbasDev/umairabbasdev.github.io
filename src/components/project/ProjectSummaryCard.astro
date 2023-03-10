@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Button from "../generic/Button.astro";
+import TagItem from "./TagItem.astro";
+import SummaryCard from "../generic/SummaryCard.astro";
+
+interface Props {
+  project: CollectionEntry<"project">;
+}
+
+const { project } = Astro.props;
+---
+
+<SummaryCard
+  title={project.data.name}
+  imgAlt={project.data.imgUrl[0]}
+  imgSrc={project.data.imgUrl[0]}
+  description={project.data.description}
+>
+  <div class="flex justify-end my-4">
+    <Button href={project.data.repositoryUrl}>Explore Code &rarr;</Button>
+    {/* <Button href={`/blog/${project.slug}/`}>Read project &rarr;</Button> */}
+  </div>
+
+  <div class="hidden sm:inline-block">
+    <p class="poppins mt-2">dependencies:</p>
+    <div class="flex justify-between items-center">
+      <ul class="flex gap-4 mt-2">
+        {
+          project.data.dependencies.map((dependency) => {
+            return (
+              <li>
+                <a href={`/project/tags/${dependency.toLowerCase()}/`}>
+                  <TagItem>{dependency}</TagItem>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+      {
+        project.data.isPublic && (
+          <span class="bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow">
+            Draft
+          </span>
+        )
+      }
+    </div>
+  </div>
+</SummaryCard>

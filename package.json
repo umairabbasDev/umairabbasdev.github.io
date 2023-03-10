@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "type": "module",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "umair abbas",
+    "email": "uamir4138@gmail.com",
+    "url": "https://www.test.com"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://text.com",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
