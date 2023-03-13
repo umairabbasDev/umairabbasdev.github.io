@@ -2,15 +2,24 @@
 interface Props {
   color: string;
   extraClasses?: string;
+  type?: string;
 }
 
-const { color, extraClasses } = Astro.props;
+const { color, extraClasses, type } = Astro.props;
 ---
+
+<style>
+  .comic-bg {
+    background-image: radial-gradient(circle, #000000 10%, transparent 25%);
+    background-size: 10px 10px;
+  }
+</style>
 
 <div
   class:list={[
     `bg-${color}`,
-    'card-shadow border-black border-3 rounded-lg p-4',
+    `${type === "no-dot" ? "" : "comic-bg"}`,
+    "card-shadow border-black border-3 rounded-lg p-4",
     extraClasses,
   ]}
 >

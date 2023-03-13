@@ -3,11 +3,28 @@ interface Props {
   href: string;
   color?: string;
   blank?: boolean;
+  extraClasses?: string;
 }
 
-const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'pink'];
-
-const { href, color, blank } = Astro.props;
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "pink",
+  "purple",
+  "orange",
+  "teal",
+  "cyan",
+  "lime",
+  "emerald",
+  "fuchsia",
+  "violet",
+  "rose",
+  "sky",
+  "amber",
+];
+const { href, color, blank, extraClasses } = Astro.props;
 ---
 
 <style>
@@ -21,12 +38,12 @@ const { href, color, blank } = Astro.props;
 
 <a
   href={href}
-  target={blank ? '_blank' : '_self'}
+  target={blank ? "_blank" : "_self"}
   class:list={[
     color
       ? `hover:bg-${color}`
       : `hover:bg-${colors[Math.floor(Math.random() * colors.length)]}`,
-    'btn bg-white sanchez inline-block py-2 px-4 border-2 border-black transition-all ease-in-out duration-150',
+    `btn bg-white sanchez inline-block py-2 px-4 border-2 border-black transition-all ease-in-out duration-150 ${extraClasses}`,
   ]}
 >
   <slot />

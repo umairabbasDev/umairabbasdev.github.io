@@ -6,53 +6,167 @@ import MobileSocials from "../components/home/MobileSocials.astro";
 import Card from "../components/generic/Card.astro";
 import Button from "../components/generic/Button.astro";
 import TagItem from "../components/blog/TagItem.astro";
+import Social from "../components/generic/Social.astro";
 
 const builtWith = [
+  { name: "React", url: "https://vercel.com", color: "" },
+  { name: "Expressjs", url: "https://vercel.com", color: "" },
+  { name: "NodeJs", url: "https://vercel.com", color: "" },
   { name: "Astro", url: "https://astro.build/" },
-  { name: "UnoCSS", url: "https://uno.antfu.me/" },
-  {
-    name: "Content Collections",
-    url: "https://docs.astro.build/en/guides/content-collections/",
-  },
-  { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
-  {
-    name: "Sitemap",
-    url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/",
-  },
-  { name: "Vercel", url: "https://vercel.com" },
-  { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+  { name: "Tailwincss", url: "https://astro.build/" },
+  { name: "MUI", url: "https://astro.build/" },
+  { name: "Bootstrap", url: "https://astro.build/" },
+  // { name: "", url: "https://vercel.com", color:"" },
+  // { name: "UnoCSS", url: "https://uno.antfu.me/" },
+  // {name: "Content Collections",url: "https://docs.astro.build/en/guides/content-collections/"},
+  // { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
+  // {name: "Sitemap",url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/"},
+  // { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+];
+
+const lang = [
+  { name: "C++", url: "https://vercel.com", color: "" },
+  { name: "Python", url: "https://vercel.com", color: "" },
+  { name: "JavaScript", url: "https://vercel.com", color: "" },
+  { name: "TypeScript", url: "https://astro.build/" },
+  { name: "CSS", url: "https://astro.build/" },
+  { name: "R", url: "https://astro.build/" },
+  { name: "Bash", url: "https://astro.build/" },
+  // { name: "", url: "https://vercel.com", color:"" },
+  // { name: "UnoCSS", url: "https://uno.antfu.me/" },
+  // {name: "Content Collections",url: "https://docs.astro.build/en/guides/content-collections/"},
+  // { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
+  // {name: "Sitemap",url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/"},
+  // { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+];
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "pink",
+  "purple",
+  "orange",
+  "teal",
+  "cyan",
+  "lime",
+  "emerald",
+  "fuchsia",
+  "violet",
+  "rose",
+  "sky",
+  "amber",
 ];
 ---
 
 <Layout
   title="Home"
-  pageTitle="Brutal Theme | Home"
-  description="Brutal is a minimalistic, neobrutalism theme for Astro."
+  pageTitle="Umair Abbas | Home"
+  description="this is a portfolio of Umair Muhammad Abbas"
+  classList="h-screen overflow-hidden"
 >
-  <main class="bg-pink p-6">
+  <main class="p-6 flex flex-col">
     <MobileSocials />
-    <section id="about" class="grid  md:grid-cols-8 gap-8 mt-4">
-      <h2 class="hidden">About Brutal</h2>
-      <Card
-        color="green"
-        extraClasses=" flex flex-col justify-between gap-4 items-start md:col-span-5 row-span-2"
-      >
-        <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
-          Brutal theme for <a
+    <section
+      id="about"
+      class="flex-grow grid md:grid-cols-8 gap-3 mt-4"
+      style="height: 90vh;"
+    >
+      <h2 class="hidden">portfolio</h2>
+      <Card color="white" extraClasses=" grid   items-start md:col-span-8 ">
+        <div class="place-self-center mt-4">
+          <h3
+            class="righteous text-2xl md:text-5xl lg:text-7xl p-0 m-0"
+            style="text-shadow: 3px 8px 7px #000000a1;"
+          >
+            <span class=""> Umair Muhammad Abbas</span>
+          </h3>
+        </div>
+
+        <p
+          class="poppins card bg-white border-3 border-black rounded-lg p-4 w-150 place-self-center"
+        >
+          Brutal is a theme built with Astro, UnoCSS by <a
+            href="https://www.github.com/">Umair Abbas</a
+          >. It's a simple, fast, and modern theme that is easy to use and
+          customize. Mainly meant to power blogs and personal websites.
+        </p>
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col place-self-start">
+            <Button extraClasses="w-30 mt-5 " href="/about/">
+              About &rarr;
+            </Button>
+            <Button extraClasses="w-30 mt-5 ml-8" href="/blog/">
+              Blogs &rarr;
+            </Button>
+            <Button extraClasses="w-30 mt-5 ml-18" href="/project/">
+              Projects &rarr;
+            </Button>
+            <Button extraClasses="w-30 mt-5 ml-30" href="/contact/">
+              Contact &rarr;
+            </Button>
+          </div>
+
+          <!-- intro box -->
+          <!-- <Card color="gray" extraClasses="flex flex-col place-self-start mt-20 "> -->
+          <p
+            class="poppins card bg-white border-3 border-black rounded-lg p-4 mt-20 w-50 place-self-center"
+          >
+            Brutal is a theme built with Astro, UnoCSS by <a
+              href="https://www.github.com/">Umair Abbas</a
+            >. It's a simple, fast, and modern theme that is easy to use and
+            customize. Mainly meant to power blogs and personal websites.
+          </p>
+          <!-- </Card> -->
+        </div>
+
+        <Card color="white" type="no-dot" extraClasses="place-self-center">
+          <Social />
+        </Card>
+      </Card>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .bg-comic-white {
+    background-image: radial-gradient(circle, #ff0000 10%, transparent 25%);
+    background-size: 10px 10px;
+  }
+</style>
+
+<!-- <div class='card bg-white border-3 border-black rounded-lg p-4 h-full flex flex-col justify-between'> -->
+<!-- <p class="poppins card bg-white border-3 border-black rounded-lg p-4">
+  Brutal is a theme built with Astro, UnoCSS by <a
+    href="https://www.github.com/">Umair Abbas</a
+  >. It's a simple, fast, and modern theme that is easy to use and
+  customize. Mainly meant to power blogs and personal websites.
+</p> -->
+
+<!-- A minimalistic, neobrutalism theme for Astro. -->
+<!-- <p class="card bg-white border-3 border-black rounded-lg p-4">
+          Welcome to my portfolio website! I'm a versatile software professional
+          with a broad range of skills and experience in web development,
+          scripting, desktop application development, and data scraping. With
+          over 5 years of experience as a full-stack engineer, I have a strong
+          command of MERN stack, Node.js, JavaScript, Python, and other modern
+          technologies. I take pride in my ability to write clean, efficient,
+          and maintainable code that delivers exceptional user experiences.
+          Whether you need a robust web application, a custom desktop
+          application, or a tool for data scraping, I'm up for the challenge.
+          Take a look at some of my past projects and get in touch if you're
+          interested in working together.
+        </p> -->
+
+<!-- <a
             class="text-white"
             target="_blank"
             href="https://astro.build/">Astro</a
-          >
-        </p>
-        <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
-          A minimalistic, neobrutalism theme for Astro.
-        </p>
-        <Button href="/blog/">Check out the blog &rarr;</Button>
-      </Card>
-      
-      <Card color="blue" extraClasses="col-span-3">
+          > -->
+
+<!-- <Card color="violet" extraClasses="col-span-3">
         <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">
-          Brutal is built with
+          Framewoks & Lib.
         </h2>
         <ul class="flex gap-4 flex-wrap">
           {
@@ -75,17 +189,26 @@ const builtWith = [
 
       <Card color="orange" extraClasses="col-span-3">
         <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
-          What is Brutal?
+          Languages
         </h2>
-        <p class="poppins">
-          Brutal is a theme built with Astro, UnoCSS by <a
-            href="https://www.github.com/">Umair Abbas</a
-          >. It's a simple, fast, and modern theme that is easy to use and
-          customize. Mainly meant to power blogs and personal websites.
-        </p>
-      </Card>
-    </section>
-    <RecentBlogPosts />
-    <RecentProjects />
-  </main>
-</Layout>
+        <ul class="flex gap-4 flex-wrap">
+          {
+            lang.map((item) => (
+              <li>
+                <TagItem>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    title={`Go to ${item.name}`}
+                  >
+                    {item.name}
+                  </a>
+                </TagItem>
+              </li>
+            ))
+          }
+        </ul>
+      </Card> -->
+
+<!-- <RecentProjects />
+    <RecentBlogPosts /> -->

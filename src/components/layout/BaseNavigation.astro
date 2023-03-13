@@ -51,22 +51,6 @@ const { pageTitle } = Astro.props;
           </li>
         ))
       }
-
-      <!-- social icons -->
-      {
-        socialIcons.map((item) => (
-          <li>
-            <a
-              href={item.url}
-              class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
-              target="_blank"
-              title={`'See @Umair Abbas on ${item.name}`}
-            >
-              <div class:list={[item.icon, "w-6 h-6"]} />
-            </a>
-          </li>
-        ))
-      }
     </ul>
   </nav>
   <nav class="md:hidden flex">

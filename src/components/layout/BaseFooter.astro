@@ -1,7 +1,24 @@
 ---
+const socialIcons = [
+  {
+    name: "GitHub",
+    url: "https://github.com/umairabbasDev",
+    icon: "i-uil-github",
+  },
+  {
+    name: "Twitter",
+    url: "https://www.twitter.com/umair_abba",
+    icon: "i-uil-twitter",
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/umair-abbas-a43503121/",
+    icon: "i-uil-linkedin",
+  },
+];
 ---
 
-<footer class="bg-black text-white p-6">
+<footer class="bg-black text-white p-6 sticky bottom-0">
   <h2 class="hidden">Footer</h2>
   <p class="outfit">
     <a
@@ -10,4 +27,22 @@
       class="text-blue">Umair Abbas</a
     >
   </p>
+
+  <ul class="flex gap-8 poppins">
+    <!-- social icons -->
+    {
+      socialIcons.map((item) => (
+        <li>
+          <a
+            href={item.url}
+            class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
+            target="_blank"
+            title={`'See @Umair Abbas on ${item.name}`}
+          >
+            <div class:list={[item.icon, "w-6 h-6"]} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </footer>
