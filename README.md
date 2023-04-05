@@ -1,1 +1,1 @@
-# Brutal - The neobrutalist Astro theme
+# portfolio
