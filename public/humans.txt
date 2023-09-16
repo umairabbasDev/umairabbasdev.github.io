@@ -1,6 +1,6 @@
-## Brutal Theme ##
+## portfolio ##
 
-All development & Content by Elian Van Cutsem
+All development & Content by umair muhammad abbas
 
-- email: hello@elian.codes
-- website: www.elian.codes
+- email: umair4138@gmail.com
+- website: www.umairabbas.netlify.com
