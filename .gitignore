@@ -2,3 +2,5 @@
 node_modules
 dist
 halftone.zip
+
+dist/
