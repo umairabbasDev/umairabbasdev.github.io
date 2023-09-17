@@ -1,47 +1,21 @@
 ---
-title: Blogpost 1
+title: Have you heard about the Splinternet ?
 pubDate: 11/09/2022 14:25
-author: "Elian Van Cutsem"
+author: "Umair Abbas"
 tags:
-  - JavaScript
-  - Astro
-  - UnoCSS
-imgUrl: https://i.imgur.com/iGvihVf.jpg
-description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
+  - Internet
+  - splinternet
+imgUrl: https://assets.telecomtv.com/assets/telecomtv/splinternet-image-13405.jpeg?w=1280&h=720&crop=auto
+description: It's a growing trend where governments and companies are making their own internet rules, leading to a divided online world. Some countries are even considering disconnecting from the global ...
 layout: "../../layouts/BlogPost.astro"
 ---
 
-## Deorum petiit ignis
+## Have you heard about the  **Splinternet** ?
 
-Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, _vox
-nocte sedesque_, decimo. Omnia esse, quam sive; conplevit illis indestrictus
-admovit dedit sub quod protectus, impedit non.
+It's a growing trend where governments and companies are making their own internet rules, leading to a divided online world. Some countries are even considering disconnecting from the global internet altogether, which could lead to even less free flow of information and ideas.
 
-## Iovis late orbem Perseus sunt
+If your country were to block access to sites like Google, Twitter, and WhatsApp, would you still be able to operate your business or communicate with others effectively?
 
-Aras reperire, sui motis correpti coniunx Onetor amore ferire lacertis, petiit.
-Bis pallor et mecum me, igne patruelibus _tendebam_, vultu sterilique terruerat
-_tempore_ medium aera **eadem Mittor**.
+It's important to consider the potential impact of these developments and take action to protect yourself, such as creating your own software or using alternative communication channels.
 
-- Non turba loca dederunt primordia ineamus Dictys
-- Tanti amat mundus sedula
-- Potuissent aetas parili coniuge se lumina breve
-- Tamen ille crepitantibus ulla coeperunt quibus iugulo
-- Pindusque solacia luctataque felix
-
-## Longum minus sic saepe
-
-Genu cupiens quoque: cum dolor: sollicitive cantu, et piae Leuconoe, huius non
-nil tuli Peleusque rauca. Et alvum cuncti Hippodamas meritis nec coniunx ausa,
-pete. Congestaque nisi nullus poena. Tanto cum, curvis vulnera quod optatis,
-trahens conplexa saepe.
-
-Hominum quo. Signa germanaeque iuvat at feruntur precantibus corpus praebuerat
-excipit mixtaeque inferior, haec percepit regum: nec nec sit ferenti.
-
-## Geminas namque quod referitur argenteus aderat superstes
-
-Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
-
-Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
-infelix passimque. Superasset onus.
+What steps would you take to protect yourself ? Share your thoughts in the comments!
