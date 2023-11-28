@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: https://umairabbas.netlify.com/
-Sitemap: https://umairabbas.netlify.com/sitemap-index.xml
+Host: https://umairabbas.dev/
+Sitemap: https://umairabbas.dev/sitemap-index.xml
