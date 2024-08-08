@@ -1,0 +1,227 @@
+---
+import Button from "../generic/Button.astro";
+import Card from "../generic/Card.astro";
+import Social from "../generic/Social.astro";
+// <div
+//   class="bg-gray-200 p-4 flex flex-col w-full md:w-1/2 space-y-4 border-2 border-gray-800 shadow-[4px_4px_0_0_#000] font-mono"
+//   style="background-image: url('https://www.windows93.net/img/w93-papier.png');"
+// >
+//   <div
+//     class="bg-blue-500 text-white p-2 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] flex items-center"
+//   >
+//     <div class="mr-2 w-3 h-3 bg-red-500 border border-gray-800"></div>
+//     <span class="text-lg">About</span>
+//   </div>
+//   <Button
+//     extraClasses="bg-gray-100 text-black w-full py-2 px-4 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] hover:shadow-[2px_2px_0_0_#555]"
+//     href="/about/"
+//   >
+//     About &rarr;
+//   </Button>
+
+//   <div
+//     class="bg-blue-500 text-white p-2 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] flex items-center"
+//   >
+//     <div class="mr-2 w-3 h-3 bg-green-500 border border-gray-800"></div>
+//     <span class="text-lg">Blogs</span>
+//   </div>
+//   <Button
+//     extraClasses="bg-gray-100 text-black w-full py-2 px-4 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] hover:shadow-[2px_2px_0_0_#555]"
+//     href="/blog/"
+//   >
+//     Blogs &rarr;
+//   </Button>
+
+//   <div
+//     class="bg-blue-500 text-white p-2 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] flex items-center"
+//   >
+//     <div class="mr-2 w-3 h-3 bg-yellow-500 border border-gray-800"></div>
+//     <span class="text-lg">Projects</span>
+//   </div>
+//   <Button
+//     extraClasses="bg-gray-100 text-black w-full py-2 px-4 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] hover:shadow-[2px_2px_0_0_#555]"
+//     href="/project/"
+//   >
+//     Projects &rarr;
+//   </Button>
+
+//   <div
+//     class="bg-blue-500 text-white p-2 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] flex items-center"
+//   >
+//     <div class="mr-2 w-3 h-3 bg-blue-500 border border-gray-800"></div>
+//     <span class="text-lg">Contact</span>
+//   </div>
+//   <Button
+//     extraClasses="bg-gray-100 text-black w-full py-2 px-4 border-2 border-gray-800 shadow-[2px_2px_0_0_#000] hover:shadow-[2px_2px_0_0_#555]"
+//     href="/contact/"
+//   >
+//     Contact &rarr;
+//   </Button>
+// </div>
+---
+
+<div
+  class="bg-teal-300/70 h-full flex flex-col items-start w-full p-6 md:p-8 lg:p-12 justify-evenly"
+>
+  <div
+    class="bg-gray-200 p-4 flex flex-col w-full md:w-1/2 space-y-4 border border-black font-mono"
+    style="background-color: #c3c7cb; font-family: 'MS Sans Serif';"
+  >
+    <!-- About Button -->
+    <div
+      class="bg-gray-100 text-black p-2 border border-black flex items-center"
+      style="box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+        class="mr-2"
+      >
+        <rect x="2" y="2" width="12" height="12" fill="white"></rect>
+        <text
+          x="8"
+          y="12"
+          font-family="sans-serif"
+          font-size="10"
+          text-anchor="middle"
+          fill="black">?</text
+        >
+      </svg>
+      <span class="text-lg">About</span>
+    </div>
+    <Button
+      extraClasses="bg-gray-100 text-black w-full py-2 px-4 border border-black flex items-center"
+      href="/about/"
+      style="box-shadow: 1px 1px #fff, -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="black"
+        class="mr-2"
+      >
+        <polygon points="5,2 11,8 5,14"></polygon>
+      </svg>
+      About &rarr;
+    </Button>
+
+    <!-- Blogs Button -->
+    <div
+      class="bg-gray-100 text-black p-2 border border-black flex items-center"
+      style="box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+        class="mr-2"
+      >
+        <rect x="2" y="2" width="12" height="12" fill="white"></rect>
+        <line x1="4" y1="6" x2="12" y2="6" stroke="black"></line>
+        <line x1="4" y1="10" x2="12" y2="10" stroke="black"></line>
+      </svg>
+      <span class="text-lg">Blogs</span>
+    </div>
+    <Button
+      extraClasses="bg-gray-100 text-black w-full py-2 px-4 border border-black flex items-center"
+      href="/blog/"
+      style="box-shadow: 1px 1px #fff, -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="black"
+        class="mr-2"
+      >
+        <polygon points="5,2 11,8 5,14"></polygon>
+      </svg>
+      Blogs &rarr;
+    </Button>
+
+    <!-- Projects Button -->
+    <div
+      class="bg-gray-100 text-black p-2 border border-black flex items-center"
+      style="box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+        class="mr-2"
+      >
+        <circle cx="8" cy="8" r="6" fill="white"></circle>
+        <path d="M8 4 L8 8 L10 10"></path>
+      </svg>
+      <span class="text-lg">Projects</span>
+    </div>
+    <Button
+      extraClasses="bg-gray-100 text-black w-full py-2 px-4 border border-black flex items-center"
+      href="/project/"
+      style="box-shadow: 1px 1px #fff, -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="black"
+        class="mr-2"
+      >
+        <polygon points="5,2 11,8 5,14"></polygon>
+      </svg>
+      Projects &rarr;
+    </Button>
+
+    <!-- Contact Button -->
+    <div
+      class="bg-gray-100 text-black p-2 border border-black flex items-center"
+      style="box-shadow: inset 1px 1px #fff, inset -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+        class="mr-2"
+      >
+        <rect x="2" y="2" width="12" height="12" fill="white"></rect>
+        <line x1="4" y1="4" x2="12" y2="12" stroke="black"></line>
+        <line x1="4" y1="12" x2="12" y2="4" stroke="black"></line>
+      </svg>
+      <span class="text-lg">Contact</span>
+    </div>
+    <Button
+      extraClasses="bg-gray-100 text-black w-full py-2 px-4 border border-black flex items-center"
+      href="/contact/"
+      style="box-shadow: 1px 1px #fff, -1px -1px #808080;"
+    >
+      <svg
+        width="16"
+        height="16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="black"
+        class="mr-2"
+      >
+        <polygon points="5,2 11,8 5,14"></polygon>
+      </svg>
+      Contact &rarr;
+    </Button>
+  </div>
+
+  <Card color="white" type="no-dot" extraClasses=" mt-4">
+    <Social />
+  </Card>
+</div>

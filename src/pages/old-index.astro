@@ -1,0 +1,235 @@
+---
+import Layout from "../layouts/Default.astro";
+import RecentBlogPosts from "../components/generic/RecentBlogPosts.astro";
+import RecentProjects from "../components/generic/RecentProjects.astro";
+import MobileSocials from "../components/home/MobileSocials.astro";
+import Card from "../components/generic/Card.astro";
+import NavigationSection from "../components/home/NavigationSection.astro";
+import SkillsSection from "../components/home/SkillsSection.astro";
+import Button from "../components/generic/Button.astro";
+
+
+import TagItem from "../components/blog/TagItem.astro";
+import Social from "../components/generic/Social.astro";
+
+const builtWith = [
+  { name: "React", url: "https://vercel.com", color: "" },
+  { name: "Expressjs", url: "https://vercel.com", color: "" },
+  { name: "NodeJs", url: "https://vercel.com", color: "" },
+  { name: "Astro", url: "https://astro.build/" },
+  { name: "Tailwincss", url: "https://astro.build/" },
+  { name: "MUI", url: "https://astro.build/" },
+  { name: "Bootstrap", url: "https://astro.build/" },
+  // { name: "", url: "https://vercel.com", color:"" },
+  // { name: "UnoCSS", url: "https://uno.antfu.me/" },
+  // {name: "Content Collections",url: "https://docs.astro.build/en/guides/content-collections/"},
+  // { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
+  // {name: "Sitemap",url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/"},
+  // { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+];
+
+const lang = [
+  { name: "C++", url: "https://vercel.com", color: "" },
+  { name: "Python", url: "https://vercel.com", color: "" },
+  { name: "JavaScript", url: "https://vercel.com", color: "" },
+  { name: "TypeScript", url: "https://astro.build/" },
+  { name: "CSS", url: "https://astro.build/" },
+  { name: "R", url: "https://astro.build/" },
+  { name: "Bash", url: "https://astro.build/" },
+  // { name: "", url: "https://vercel.com", color:"" },
+  // { name: "UnoCSS", url: "https://uno.antfu.me/" },
+  // {name: "Content Collections",url: "https://docs.astro.build/en/guides/content-collections/"},
+  // { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
+  // {name: "Sitemap",url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/"},
+  // { name: "TypeScript", url: "https://www.typescriptlang.org/" },
+];
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "pink",
+  "purple",
+  "orange",
+  "teal",
+  "cyan",
+  "lime",
+  "emerald",
+  "fuchsia",
+  "violet",
+  "rose",
+  "sky",
+  "amber",
+];
+---
+
+<Layout
+  title="Home"
+  pageTitle="Umair Abbas | Home"
+  description="This is a portfolio of Umair Muhammad Abbas"
+  classList="h-screen bg-gray-100"
+>
+  <main class="p-6 flex flex-col space-y-8">
+    <MobileSocials />
+    <section id="about" class="flex-grow grid md:grid-cols-8 gap-4">
+      <Card
+        color="white"
+        extraClasses="md:col-span-8 flex flex-col items-center space-y-8"
+      >
+        <div class="text-center">
+          <h3
+            class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold tracking-wider"
+            style="text-shadow: 4px 9px 8px rgba(0, 0, 0, 0.5);"
+          >
+            <span>Umair Muhammad Abbas</span>
+          </h3>
+        </div>
+
+        <p
+          class="poppins card bg-white border-3 border-black rounded-lg p-6 max-w-lg text-center shadow-lg"
+        >
+          <span class="font-bold text-2xl block mb-2"
+            >Welcome to my portfolio!</span
+          >
+          I am a versatile software professional with over 7 years of experience
+          in web development, scripting, desktop application development, and data
+          scraping. My expertise includes the MERN stack, Node.js, JavaScript, Python,
+          and other modern technologies. I take pride in writing clean, efficient,
+          and maintainable code, delivering exceptional user experiences. Whether
+          you need a robust web application, a custom desktop solution, or a data
+          scraping tool, I'm ready for the challenge. Explore my past projects and
+          reach out if you're interested in collaboration.
+        </p>
+
+        <!-- Middle Section -->
+        <div
+          class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
+        >
+          <!-- Button Section -->
+          <Button
+            extraClasses="transition-transform transform hover:scale-105 shadow-md py-2 px-6"
+            href="/about/"
+          >
+            About &rarr;
+          </Button>
+          <Button
+            extraClasses="transition-transform transform hover:scale-105 shadow-md py-2 px-6"
+            href="/blog/"
+          >
+            Blogs &rarr;
+          </Button>
+          <Button
+            extraClasses="transition-transform transform hover:scale-105 shadow-md py-2 px-6"
+            href="/project/"
+          >
+            Projects &rarr;
+          </Button>
+          <Button
+            extraClasses="transition-transform transform hover:scale-105 shadow-md py-2 px-6"
+            href="/contact/"
+          >
+            Contact &rarr;
+          </Button>
+        </div>
+
+        <!-- Skills Section -->
+        <div
+          class="bg-gray-50 text-black p-8 mt-8 border-4 border-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 shadow-inner"
+        >
+          <div class="col-span-full mb-8">
+            <h3
+              class="text-3xl font-bold uppercase tracking-wide border-b-4 border-black pb-2"
+            >
+              My Skill Arsenal
+            </h3>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">React.js</h4>
+            <p class="text-sm">
+              A JavaScript library for building user interfaces, known for its
+              declarative and component-based architecture.
+            </p>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">Next.js</h4>
+            <p class="text-sm">
+              A React framework that enables server-side rendering and static
+              site generation for faster, SEO-friendly web apps.
+            </p>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">Node.js</h4>
+            <p class="text-sm">
+              A JavaScript runtime built on Chrome's V8 engine, ideal for
+              building scalable server-side applications.
+            </p>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">NestJS</h4>
+            <p class="text-sm">
+              A progressive Node.js framework for building efficient, reliable,
+              and scalable server-side applications.
+            </p>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">Vue.js</h4>
+            <p class="text-sm">
+              An approachable, versatile, and performant framework for building
+              web user interfaces.
+            </p>
+          </div>
+
+          <!-- Skill Card -->
+          <div
+            class="bg-black text-white p-6 border-2 border-black transform hover:scale-105 transition-transform duration-300 rounded-md"
+          >
+            <h4 class="text-xl font-bold mb-2">TypeScript</h4>
+            <p class="text-sm">
+              A strongly typed programming language that builds on JavaScript,
+              giving you better tooling at any scale.
+            </p>
+          </div>
+
+          <!-- Add more cards as needed -->
+        </div>
+
+        <Card color="white" type="no-dot" extraClasses="place-self-center mt-8">
+          <Social />
+        </Card>
+      </Card>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .bg-comic-white {
+    background-image: radial-gradient(circle, #ff0000 10%, transparent 25%);
+    background-size: 10px 10px;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  li {
+    margin-left: 5px;
+  }
+</style>

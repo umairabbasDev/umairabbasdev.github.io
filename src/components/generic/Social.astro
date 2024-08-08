@@ -18,20 +18,18 @@ const socialIcons = [
 ];
 ---
 
-<ul class="flex gap-8 poppins">
-    <!-- social icons -->
-    {
-      socialIcons.map((item) => (
-        <li>
-          <a
-            href={item.url}
-            class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
-            target="_blank"
-            title={`'See @Umair Abbas on ${item.name}`}
-          >
-            <div class:list={[item.icon, "w-6 h-6"]} />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<ul class="flex gap-8 list-none p-4 bg-gray-200 border-2 border-black shadow-md" style="font-family: 'Courier New', Courier, monospace;">
+  <!-- Social Icons -->
+  {socialIcons.map((item) => (
+    <li class="relative">
+      <a
+        href={item.url}
+        class="block w-6 h-6 p-1 bg-white border-2 border-black rounded-md shadow-md hover:bg-gray-300 hover:scale-110 transition-transform duration-150 ease-in-out"
+        target="_blank"
+        title={`See @Umair Abbas on ${item.name}`}
+      >
+        <div class:list={[item.icon, "w-full h-full"]} />
+      </a>
+    </li>
+  ))}
+</ul>

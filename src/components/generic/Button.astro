@@ -4,6 +4,7 @@ interface Props {
   color?: string;
   blank?: boolean;
   extraClasses?: string;
+  style?: string;
 }
 
 const colors = [
@@ -24,7 +25,7 @@ const colors = [
   "sky",
   "amber",
 ];
-const { href, color, blank, extraClasses } = Astro.props;
+const { href, color, blank, extraClasses, style } = Astro.props;
 ---
 
 <style>
@@ -37,6 +38,7 @@ const { href, color, blank, extraClasses } = Astro.props;
 </style>
 
 <a
+  style={style}
   href={href}
   target={blank ? "_blank" : "_self"}
   class:list={[
